@@ -21,5 +21,6 @@
         "start": "node start.js",
         "test": "mocha app --recursive",
         "test:coverage": "istanbul cover node_modules/mocha/bin/_mocha -- app --recursive"
-    }
+    },
+    "main": "start.js"
 }
