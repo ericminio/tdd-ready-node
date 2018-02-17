@@ -24,4 +24,11 @@ describe('Server', function() {
             done();
         });
     });
+
+    it('resists unknown files', function(done) {
+        request(home + '/unknown.html', function(err, response, body) {
+            expect(response.statusCode).to.equal(404);
+            done();
+        });
+    });
 });
